@@ -1,0 +1,26 @@
+# Virtual environments
+.venv/
+.venv-new/
+__pycache__/
+*.pyc
+
+# Media inputs (too large for Git)
+data/input/*.mp4
+data/input/*.webm
+data/audio/*.wav
+
+# Generated frames
+data/frames/*.jpg
+
+# Large processed outputs
+data/processed/transcript.json
+data/processed/frame_metadata.json
+
+# OS / editor junk
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Secrets
+.env
+.env.*

@@ -1,0 +1,28 @@
+import json
+
+transcript = {
+    "lecture_title": "Introduction to Machine Learning",
+    "segments": [
+        {
+            "start": 0.0,
+            "end": 5.5,
+            "text": "Today we are going to study machine learning."
+        },
+        {
+            "start": 5.5,
+            "end": 12.2,
+            "text": "Machine learning allows computers to learn from data."
+        }
+    ]
+}
+
+with open(
+    "data/processed/test_transcript.json",
+    "w",
+    encoding="utf-8"
+) as file:
+    json.dump(transcript, file, indent=4, ensure_ascii=False)
+
+# json.dump() --> takes your Python dictionary and converts it into JSON.
+
+print("Transcript saved successfully!")
